@@ -21,6 +21,39 @@
 
 ---
 
+## 📸 Preview
+
+<table>
+  <tr>
+    <td align="center" colspan="2">
+      <strong>🏠 Hero — Premium Car Rental</strong><br/>
+      <img src="screenshots/hero.png" alt="Hero Section" width="100%"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <strong>🚗 Wide Range of Vehicle</strong><br/>
+      <img src="screenshots/range.png" alt="Range Section" width="100%"/>
+    </td>
+    <td align="center" width="50%">
+      <strong>🎡 Pick Your Dream Car</strong><br/>
+      <img src="screenshots/stories.png" alt="Car Carousel" width="100%"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <strong>🎠 3D Car Carousel</strong><br/>
+      <img src="screenshots/carousel.png" alt="Stories Section" width="100%"/>
+    </td>
+    <td align="center" width="50%">
+      <strong>📲 Download & Footer</strong><br/>
+      <img src="screenshots/footer.png" alt="Footer Section" width="100%"/>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## 🖼️ Sections
 
 | Section | Description |
