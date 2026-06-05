@@ -83,32 +83,6 @@
 
 ---
 
-## 🗂️ Project Structure
-
-```
-Rune-Rental-Car/
-│
-├── index.html          # Main HTML — all sections and layout
-├── style.css           # Global styles, animations, responsive design
-├── main.js             # Interactivity: menu toggle, Swiper, ScrollReveal, banner
-│
-├── assets/             # Images used across sections
-│   ├── header.png
-│   ├── location.png
-│   ├── select-1.png → select-5.png
-│   ├── range-1.jpg  → range-4.jpg
-│   ├── story-1.jpg  → story-3.jpg
-│   ├── banner-1.png → banner-10.png
-│   ├── download.png
-│   ├── apple.png
-│   └── google.png
-│
-└── logo/
-    └── rünelogo.png    # Favicon and brand logo
-```
-
----
-
 ## ⚙️ Features
 
 - 📱 **Fully Responsive** — adapts to mobile, tablet, and desktop viewports
@@ -117,31 +91,6 @@ Rune-Rental-Car/
 - 🔁 **Auto-Scrolling Banner** — infinite looping banner strip via CSS animation and DOM cloning
 - ☰ **Mobile Navigation** — hamburger menu with animated icon toggle
 - 📰 **Newsletter Form** — email subscription with a clean, minimal input UI
-
----
-
-## 🚀 Getting Started
-
-No build tools or package installation required. Just open the project in a browser.
-
-### Option 1 — Open directly
-
-```bash
-# Clone the repository
-git clone https://github.com/ramirolacci/Rune-Rental-Car.git
-
-# Navigate to the project folder
-cd Rune-Rental-Car
-
-# Open index.html in your browser
-start index.html    # Windows
-open index.html     # macOS
-xdg-open index.html # Linux
-```
-
-### Option 2 — Live Server (recommended for development)
-
-If you use **VS Code**, install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension and click **"Go Live"** from `index.html`.
 
 ---
 
