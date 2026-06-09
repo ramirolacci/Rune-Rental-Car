@@ -17,7 +17,7 @@
 
 ## ✨ Overview
 
-**Rüne** is a modern, responsive landing page designed for a premium car rental service. Built entirely with vanilla HTML, CSS, and JavaScript, it delivers a polished visual experience with smooth animations, an interactive vehicle carousel, and an auto-scrolling brand banner — all without a single framework dependency.
+**Rüne** is a modern, responsive landing page designed for a premium car rental service. Built entirely with vanilla HTML, CSS, and JavaScript, it delivers a polished visual experience with smooth animations, an interactive vehicle carousel, and an auto-scrolling brand banner - all without a single framework dependency.
 
 ---
 
