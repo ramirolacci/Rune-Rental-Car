@@ -740,13 +740,15 @@ nav.scrolled {
 }
 
 .select__btns .btn:nth-child(2) {
-  color: var(--white);
+  color: var(--text-dark);
   background-color: var(--primary-color);
 }
 
 .select__btns .btn:nth-child(2):hover {
   background-color: var(--primary-color-dark);
   color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 183, 84, 0.4);
 }
 
 /* Story Section */

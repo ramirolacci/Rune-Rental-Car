@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const monthNames = [
-  'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
+  'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
   'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
 ];
 
@@ -117,7 +117,7 @@ const Hero = ({ onSearchSubmit }) => {
   return (
     <header>
       <div className="header__container" id="home">
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -125,9 +125,9 @@ const Hero = ({ onSearchSubmit }) => {
           ALQUILER DE AUTOS PREMIUM
         </motion.h1>
 
-        <motion.form 
+        <motion.form
           ref={formRef}
-          action="/" 
+          action="/"
           onSubmit={handleSubmit}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -152,7 +152,7 @@ const Hero = ({ onSearchSubmit }) => {
                 type="text"
                 name="start"
                 id="start"
-                placeholder="Ingresar fecha de inicio"
+                placeholder="dd/mm/aaaa"
                 value={searchParams.start}
                 onChange={handleChange}
                 readOnly
@@ -161,7 +161,7 @@ const Hero = ({ onSearchSubmit }) => {
             </div>
 
             {activeCalendar === 'start' && (
-              <CustomCalendar 
+              <CustomCalendar
                 onSelectDate={(dateStr) => setSearchParams(prev => ({ ...prev, start: dateStr }))}
                 onClose={() => setActiveCalendar(null)}
               />
@@ -175,7 +175,7 @@ const Hero = ({ onSearchSubmit }) => {
                 type="text"
                 name="stop"
                 id="stop"
-                placeholder="Ingresar fecha de fin"
+                placeholder="dd/mm/aaaa"
                 value={searchParams.stop}
                 onChange={handleChange}
                 readOnly
@@ -184,7 +184,7 @@ const Hero = ({ onSearchSubmit }) => {
             </div>
 
             {activeCalendar === 'stop' && (
-              <CustomCalendar 
+              <CustomCalendar
                 onSelectDate={(dateStr) => setSearchParams(prev => ({ ...prev, stop: dateStr }))}
                 onClose={() => setActiveCalendar(null)}
               />
@@ -196,9 +196,9 @@ const Hero = ({ onSearchSubmit }) => {
           </button>
         </motion.form>
 
-        <motion.img 
-          src="/assets/header.png" 
-          alt="Auto de alquiler premium Rüne" 
+        <motion.img
+          src="/assets/header.png"
+          alt="Auto de alquiler premium Rüne"
           initial={{ opacity: 0, scale: 0.95, y: 40 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
