@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow } from 'swiper/modules';
+import { EffectCoverflow, Autoplay } from 'swiper/modules';
 import { motion } from 'framer-motion';
 
 const cars = [
@@ -63,15 +63,21 @@ const CarSelector = ({ onSelectCarForBooking, onOpenCarDetails }) => {
         centeredSlides={true}
         slidesPerView="auto"
         loop={true}
+        speed={800}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         coverflowEffect={{
           rotate: 0,
-          stretch: -100,
-          depth: 500,
+          stretch: -20,
+          depth: 220,
           modifier: 1,
-          scale: 0.75,
+          scale: 0.88,
           slideShadows: false,
         }}
-        modules={[EffectCoverflow]}
+        modules={[EffectCoverflow, Autoplay]}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         className="swiper"
       >
