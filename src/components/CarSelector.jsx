@@ -41,19 +41,9 @@ const cars = [
   }
 ];
 
-const CarSelector = () => {
+const CarSelector = ({ onSelectCarForBooking, onOpenCarDetails }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeCar = cars[activeIndex] || cars[0];
-
-  const handleRentNow = (e) => {
-    e.preventDefault();
-    alert(`Thank you for selecting the ${activeCar.name}! Daily Rate: $${activeCar.price}/day. Proceeding to checkout...`);
-  };
-
-  const handleViewDetails = (e) => {
-    e.preventDefault();
-    alert(`Vehicle Details for ${activeCar.name}:\n- Top Speed: ${activeCar.specs.speed} km/h\n- Transmission: ${activeCar.specs.gear} speed\n- Seating Capacity: ${activeCar.specs.seats} seats\n- Mileage: ${activeCar.specs.mileage} mpg`);
-  };
 
   return (
     <section className="select__container" id="ride">
@@ -64,7 +54,7 @@ const CarSelector = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        PICK YOUR DREAM CAR TODAY
+        ELIGE EL AUTO DE TUS SUEÑOS HOY
       </motion.h2>
 
       <Swiper
@@ -86,7 +76,7 @@ const CarSelector = () => {
         className="swiper"
       >
         {cars.map((car, index) => (
-          <SwiperSlide key={car.id} className="swiper-slide">
+          <SwiperSlide key={car.id}>
             <div className={`select__card ${index === activeIndex ? 'show__info' : ''}`}>
               <img src={car.image} alt={car.name} />
               
@@ -97,15 +87,15 @@ const CarSelector = () => {
                 </div>
                 <div className="select__info__card">
                   <span><i className="ri-settings-5-line"></i></span>
-                  <h4>{car.specs.gear} <span>speed</span></h4>
+                  <h4>{car.specs.gear} <span>velocidades</span></h4>
                 </div>
                 <div className="select__info__card">
                   <span><i className="ri-roadster-line"></i></span>
-                  <h4>{car.specs.seats} <span>seats</span></h4>
+                  <h4>{car.specs.seats} <span>asientos</span></h4>
                 </div>
                 <div className="select__info__card">
                   <span><i className="ri-signpost-line"></i></span>
-                  <h4>{car.specs.mileage} <span>mileage</span></h4>
+                  <h4>{car.specs.mileage} <span>autonomía</span></h4>
                 </div>
               </div>
             </div>
@@ -113,14 +103,26 @@ const CarSelector = () => {
         ))}
       </Swiper>
 
-      <form className="select__form">
+      <form className="select__form" onSubmit={(e) => e.preventDefault()}>
         <div className="select__price">
           <span><i className="ri-price-tag-3-line"></i></span>
-          <div><span id="select-price">${activeCar.price}</span> /day</div>
+          <div><span id="select-price">${activeCar.price}</span> /día</div>
         </div>
         <div className="select__btns">
-          <button className="btn" onClick={handleViewDetails}>View Details</button>
-          <button className="btn" onClick={handleRentNow}>Rent Now</button>
+          <button 
+            type="button" 
+            className="btn btn-secondary"
+            onClick={() => onOpenCarDetails(activeCar)}
+          >
+            Ver detalles
+          </button>
+          <button 
+            type="button" 
+            className="btn"
+            onClick={() => onSelectCarForBooking(activeCar)}
+          >
+            Alquilar ahora
+          </button>
         </div>
       </form>
     </section>

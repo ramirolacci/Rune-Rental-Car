@@ -1,24 +1,23 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const Hero = () => {
-  const [formData, setFormData] = useState({
+const Hero = ({ onSearchSubmit }) => {
+  const [searchParams, setSearchParams] = useState({
     location: '',
     start: '',
     stop: ''
   });
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
+    setSearchParams({
+      ...searchParams,
       [e.target.name]: e.target.value
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const loc = formData.location || 'Dallas, Texas';
-    alert(`Searching cars in ${loc} from ${formData.start || 'Aug 16'} to ${formData.stop || 'Aug 18'}...`);
+    onSearchSubmit(searchParams);
   };
 
   return (
@@ -29,63 +28,64 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          PREMIUM CAR RENTAL
+          ALQUILER DE AUTOS PREMIUM
         </motion.h1>
 
         <motion.form 
+          action="/" 
           onSubmit={handleSubmit}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="input__group">
-            <label htmlFor="location">Pick up & Return location</label>
+            <label htmlFor="location">Lugar de retiro y devolución</label>
             <input
               type="text"
               name="location"
               id="location"
-              value={formData.location}
-              onChange={handleChange}
               placeholder="Dallas, Texas"
+              value={searchParams.location}
+              onChange={handleChange}
             />
           </div>
           <div className="input__group">
-            <label htmlFor="start">Start</label>
+            <label htmlFor="start">Inicio</label>
             <input
               type="text"
               name="start"
               id="start"
-              value={formData.start}
+              placeholder="16 Ago, 10:00 AM"
+              value={searchParams.start}
               onChange={handleChange}
-              placeholder="Aug 16, 10:00 AM"
             />
           </div>
           <div className="input__group">
-            <label htmlFor="stop">Stop</label>
+            <label htmlFor="stop">Fin</label>
             <input
               type="text"
               name="stop"
               id="stop"
-              value={formData.stop}
+              placeholder="18 Ago, 10:00 PM"
+              value={searchParams.stop}
               onChange={handleChange}
-              placeholder="Aug 18, 10:00 PM"
             />
           </div>
-          <button type="submit" className="btn" aria-label="Search">
+          <button type="submit" className="btn" aria-label="Buscar autos">
             <i className="ri-search-line"></i>
           </button>
         </motion.form>
 
         <motion.img 
           src="/assets/header.png" 
-          alt="Premium Rental Car Header"
+          alt="Auto de alquiler premium Rüne" 
           initial={{ opacity: 0, scale: 0.95, y: 40 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
         />
       </div>
 
-      <a href="#about" className="scroll__down" aria-label="Scroll to details">
+      <a href="#about" className="scroll__down" aria-label="Ver detalles">
         <i className="ri-arrow-down-line"></i>
       </a>
     </header>

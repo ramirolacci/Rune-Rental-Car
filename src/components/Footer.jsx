@@ -5,36 +5,36 @@ const Footer = () => {
     <footer>
       <div className="section__container footer__container">
         <div className="footer__col">
-          <h4>Resources</h4>
+          <h4>Recursos</h4>
           <ul className="footer__links">
-            <li><a href="#">Installation</a></li>
-            <li><a href="#">Release Note</a></li>
-            <li><a href="#">Community Help</a></li>
+            <li><a href="#">Instalación</a></li>
+            <li><a href="#">Notas de versión</a></li>
+            <li><a href="#">Ayuda comunitaria</a></li>
           </ul>
         </div>
 
         <div className="footer__col">
-          <h4>Company</h4>
+          <h4>Empresa</h4>
           <ul className="footer__links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Support</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Carreras</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Soporte</a></li>
           </ul>
         </div>
 
         <div className="footer__col">
-          <h4>Product</h4>
+          <h4>Producto</h4>
           <ul className="footer__links">
-            <li><a href="#">Demo</a></li>
-            <li><a href="#">Security</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Features</a></li>
+            <li><a href="#">Demostración</a></li>
+            <li><a href="#">Seguridad</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Características</a></li>
           </ul>
         </div>
 
         <div className="footer__col">
-          <h4>Follow Us</h4>
+          <h4>Síguenos</h4>
           <ul className="footer__socials">
             <li>
               <a href="#" aria-label="Facebook"><i className="ri-facebook-fill"></i></a>
@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__bar">
-        Copyright © 2024 Ramiro Lacci. All rights reserved.
+        Copyright © 2024 Ramiro Lacci. Todos los derechos reservados.
       </div>
     </footer>
   );

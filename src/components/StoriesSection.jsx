@@ -5,28 +5,28 @@ const stories = [
   {
     id: 1,
     day: '12',
-    month: 'January',
+    month: 'Enero',
     year: '2024',
-    title: 'Adventures on the Open Road',
-    desc: 'Join us as we dive into the exhilarating stories of travelers who embarked on unforgettable journeys with PREMIUM CAR RENTAL.',
+    title: 'Aventuras en la carretera abierta',
+    desc: 'Únete a nosotros mientras nos sumergimos en las apasionantes historias de viajeros que se embarcaron en viajes inolvidables con ALQUILER DE AUTOS PREMIUM.',
     image: '/assets/story-1.jpg'
   },
   {
     id: 2,
     day: '04',
-    month: 'March',
+    month: 'Marzo',
     year: '2024',
-    title: 'Luxury and Comfort: Experiences',
-    desc: 'In this series, we highlight the luxurious touches, unparalleled comfort, and exceptional service that make every ride.',
+    title: 'Lujo y confort: Experiencias',
+    desc: 'En esta serie, destacamos los toques de lujo, la comodidad sin igual y el servicio excepcional que hacen que cada viaje sea único.',
     image: '/assets/story-2.jpg'
   },
   {
     id: 3,
     day: '18',
-    month: 'June',
+    month: 'Junio',
     year: '2024',
-    title: 'Cars that Adapt to Your Lifestyle',
-    desc: 'Read about how our versatile vehicles have seamlessly integrated into the lives of professionals and families alike.',
+    title: 'Autos que se adaptan a tu estilo de vida',
+    desc: 'Lee sobre cómo nuestros versátiles vehículos se han integrado perfectamente en la vida de profesionales y familias por igual.',
     image: '/assets/story-3.jpg'
   }
 ];
@@ -41,7 +41,7 @@ const StoriesSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        STORIES BEHIND THE WHEEL
+        HISTORIAS AL VOLANTE
       </motion.h2>
 
       <div className="story__grid">

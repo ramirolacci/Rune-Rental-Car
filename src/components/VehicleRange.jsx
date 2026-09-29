@@ -2,13 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const vehicleCategories = [
-  { id: 1, title: 'CARS', image: '/assets/range-1.jpg' },
+  { id: 1, title: 'AUTOS', image: '/assets/range-1.jpg' },
   { id: 2, title: 'SUVS', image: '/assets/range-2.jpg' },
   { id: 3, title: 'VANS', image: '/assets/range-3.jpg' },
-  { id: 4, title: 'ELECTRIC', image: '/assets/range-4.jpg' }
+  { id: 4, title: 'ELÉCTRICOS', image: '/assets/range-4.jpg' }
 ];
 
-const VehicleRange = () => {
+const VehicleRange = ({ onSelectCategory }) => {
   return (
     <section className="section__container range__container" id="about">
       <motion.h2 
@@ -18,14 +18,15 @@ const VehicleRange = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        WIDE RANGE OF VEHICLE
+        AMPLIA GAMA DE VEHÍCULOS
       </motion.h2>
-      
+
       <div className="range__grid">
         {vehicleCategories.map((cat, index) => (
           <motion.div 
             key={cat.id} 
             className="range__card"
+            onClick={() => onSelectCategory(cat.title)}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -34,7 +35,7 @@ const VehicleRange = () => {
             <img src={cat.image} alt={cat.title} />
             <div className="range__details">
               <h4>{cat.title}</h4>
-              <a href="#ride" aria-label={`Explore ${cat.title}`}>
+              <a href="#ride" aria-label={`Ver categoría ${cat.title}`}>
                 <i className="ri-arrow-right-line"></i>
               </a>
             </div>
