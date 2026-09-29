@@ -8,13 +8,13 @@
 
 **Plataforma web moderna y de alto rendimiento para alquiler de vehículos premium.**
 
-[![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-6.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.x-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
-[![Swiper](https://img.shields.io/badge/Swiper.js-11.x-6332F6?style=for-the-badge&logo=swiper&logoColor=white)](https://swiperjs.com/)
-[![pnpm](https://img.shields.io/badge/pnpm-9.x-F69220?style=for-the-badge&logo=pnpm&logoColor=white)](https://pnpm.io/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![Swiper](https://img.shields.io/badge/Swiper.js-6332F6?style=for-the-badge&logo=swiper&logoColor=white)](https://swiperjs.com/)
+[![pnpm](https://img.shields.io/badge/pnpm-F69220?style=for-the-badge&logo=pnpm&logoColor=white)](https://pnpm.io/)
 
 </div>
 
@@ -103,39 +103,8 @@ Incluye navegación con desenfoque al desplazarse (*glassmorphism blur navbar*),
 
 ---
 
-## 🚀 Instalación y Ejecución Local
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/ramirolacci/Rune-Rental-Car.git
-   cd Rune-Rental-Car
-   ```
-
-2. **Instalar dependencias con pnpm:**
-   ```bash
-   pnpm install
-   ```
-
-3. **Iniciar el servidor de desarrollo:**
-   ```bash
-   pnpm run dev
-   ```
-
-4. **Construir para producción:**
-   ```bash
-   pnpm run build
-   ```
-
----
-
 ## 📄 Licencia y Créditos
 
 Rüne © 2026 Todos los derechos reservados | Desarrollado por [**WaveFrame Studio**](https://waveframe.com.ar/)
 
 ---
-
-<div align="center">
-
-Hecho con ❤️ por [Ramiro Lacci](https://github.com/ramirolacci) y [WaveFrame Studio](https://waveframe.com.ar/)
-
-</div>
