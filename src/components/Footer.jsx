@@ -40,7 +40,7 @@ const Footer = () => {
               <a href="#" aria-label="Facebook"><i className="ri-facebook-fill"></i></a>
             </li>
             <li>
-              <a href="#" aria-label="Twitter"><i className="ri-twitter-fill"></i></a>
+              <a href="#" aria-label="X (Twitter)"><i className="ri-twitter-x-fill"></i></a>
             </li>
             <li>
               <a href="#" aria-label="Instagram"><i className="ri-instagram-fill"></i></a>
@@ -53,7 +53,15 @@ const Footer = () => {
       </div>
 
       <div className="footer__bar">
-        Copyright © 2024 Ramiro Lacci. Todos los derechos reservados.
+        Rüne © 2026 Todos los derechos reservados | Desarrollado por{' '}
+        <a 
+          href="https://waveframe.com.ar/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{ fontWeight: 'bold', textDecoration: 'underline', color: 'inherit' }}
+        >
+          WaveFrame Studio
+        </a>
       </div>
     </footer>
   );

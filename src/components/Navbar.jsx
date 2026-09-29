@@ -44,9 +44,14 @@ const Navbar = ({ onOpenBooking }) => {
         </ul>
 
         <div className="nav__btn">
-          <button className="btn" onClick={onOpenBooking}>
-            Empezar
-          </button>
+          <a
+            href="https://wa.me/?text=Hola%2C%20quisiera%20consultar%20por%20el%20alquiler%20de%20un%20veh%C3%ADculo%20en%20R%C3%BCne%20Rental%20Car"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn"
+          >
+            Contactar
+          </a>
         </div>
       </div>
     </nav>
