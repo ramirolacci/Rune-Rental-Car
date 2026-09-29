@@ -111,7 +111,7 @@ ul {
   list-style: none;
 }
 
-/* Header & Sticky Nav: Sección independiente limpia */
+/* Header & Sticky Nav: Transparente arriba, Blur al hacer scroll */
 header {
   position: relative;
   background-image: url('/assets/header-bg.png');
@@ -189,6 +189,7 @@ nav.scrolled {
   cursor: pointer;
 }
 
+/* Nav links sin contenedor ni fondo rectangular */
 .nav__links {
   position: absolute;
   top: 100%;
@@ -200,16 +201,21 @@ nav.scrolled {
   justify-content: center;
   flex-direction: column;
   gap: 1.25rem;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(16px);
-  transition: transform 0.35s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.35s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.3s;
   z-index: 99;
   transform: translateY(-120%);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .nav__links.open {
   transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .nav__links a {
@@ -487,10 +493,11 @@ nav.scrolled {
   z-index: -1;
 }
 
-/* Range Container - Sección independiente limpia en su propia pantalla */
+/* Range Container - Sección independiente limpia */
 .range__container {
   margin-top: 0;
   padding: 5rem 1rem;
+  scroll-margin-top: 20px;
 }
 
 .range__container .section__header {
@@ -573,6 +580,12 @@ nav.scrolled {
   gap: 2rem 0;
   overflow: hidden;
   align-items: center;
+  align-content: center;
+  min-height: calc(100vh - 90px);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  scroll-margin-top: 90px;
 }
 
 .location__image img {
@@ -602,6 +615,7 @@ nav.scrolled {
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 6rem;
+  scroll-margin-top: 80px;
 }
 
 .select__container .section__header {
@@ -1102,9 +1116,13 @@ footer {
     padding: 0;
     width: fit-content;
     flex-direction: row;
-    background-color: transparent;
+    background: transparent !important;
+    background-color: transparent !important;
     transform: none !important;
-    box-shadow: none;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    box-shadow: none !important;
     gap: 2rem;
   }
 
