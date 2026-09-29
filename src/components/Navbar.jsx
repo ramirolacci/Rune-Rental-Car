@@ -40,7 +40,7 @@ const Navbar = ({ onOpenBooking }) => {
           <li><a href="#about">Vehículos</a></li>
           <li><a href="#rent">Ubicación</a></li>
           <li><a href="#ride">Alquilar</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#contact">Nosotros</a></li>
         </ul>
 
         <div className="nav__btn">

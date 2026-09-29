@@ -751,7 +751,11 @@ nav.scrolled {
   box-shadow: 0 8px 25px rgba(245, 183, 84, 0.4);
 }
 
-/* Story Section */
+/* Story Section (Sobre nosotros) */
+.story__container {
+  scroll-margin-top: 80px;
+}
+
 .story__container .section__header {
   max-width: 650px;
   margin-inline: auto;

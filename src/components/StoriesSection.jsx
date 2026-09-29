@@ -4,36 +4,36 @@ import { motion } from 'framer-motion';
 const stories = [
   {
     id: 1,
-    day: '12',
-    month: 'Enero',
-    year: '2024',
-    title: 'Aventuras en la carretera abierta',
-    desc: 'Únete a nosotros mientras nos sumergimos en las apasionantes historias de viajeros que se embarcaron en viajes inolvidables con ALQUILER DE AUTOS PREMIUM.',
+    day: '01',
+    month: 'Misión',
+    year: 'Rüne',
+    title: 'EXCELENCIA Y COMPROMISO',
+    desc: 'En Rüne nos dedicamos a transformar cada viaje en una experiencia extraordinaria. Ofrecemos una atención personalizada las 24 horas y procesos de reserva sin complicaciones.',
     image: '/assets/story-1.jpg'
   },
   {
     id: 2,
-    day: '04',
-    month: 'Marzo',
-    year: '2024',
-    title: 'Lujo y confort: Experiencias',
-    desc: 'En esta serie, destacamos los toques de lujo, la comodidad sin igual y el servicio excepcional que hacen que cada viaje sea único.',
+    day: '100%',
+    month: 'Flota',
+    year: 'De Élite',
+    title: 'VEHÍCULOS PREMIUM EXCLUSIVOS',
+    desc: 'Contamos con una selección única de deportivos de alta gama, sedanes ejecutivos y SUVs de lujo, impecablemente mantenidos para garantizar tu máximo confort y seguridad.',
     image: '/assets/story-2.jpg'
   },
   {
     id: 3,
-    day: '18',
-    month: 'Junio',
-    year: '2024',
-    title: 'Autos que se adaptan a tu estilo de vida',
-    desc: 'Lee sobre cómo nuestros versátiles vehículos se han integrado perfectamente en la vida de profesionales y familias por igual.',
+    day: '24/7',
+    month: 'Servicio',
+    year: 'VIP Global',
+    title: 'EXPERIENCIA A TU MEDIDA',
+    desc: 'Más de 10,000 clientes confían en Rüne para sus viajes de negocios y escapadas de placer. Entregas personalizadas en aeropuerto y ubicaciones seleccionadas.',
     image: '/assets/story-3.jpg'
   }
 ];
 
 const StoriesSection = () => {
   return (
-    <section className="section__container story__container">
+    <section className="section__container story__container" id="contact">
       <motion.h2 
         className="section__header"
         initial={{ opacity: 0, y: 20 }}
@@ -41,7 +41,7 @@ const StoriesSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        HISTORIAS AL VOLANTE
+        SOBRE NOSOTROS
       </motion.h2>
 
       <div className="story__grid">
