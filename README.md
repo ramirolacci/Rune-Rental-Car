@@ -103,6 +103,48 @@ Incluye navegación con desenfoque al desplazarse (*glassmorphism blur navbar*),
 
 ---
 
+## 🚀 Instalación y Puesta en Marcha
+
+Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
+
+### 📋 Prerrequisitos
+
+Asegúrate de tener instalado:
+- [Node.js](https://nodejs.org/) (versión 18 o superior recomendada)
+- [pnpm](https://pnpm.io/) (gestor recomendado) o en su defecto `npm` / `yarn`
+
+### 🔧 Pasos a seguir
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/ramirolacci/Rune-Rental-Car.git
+   cd Rune-Rental-Car
+   ```
+
+2. **Instalar las dependencias:**
+   ```bash
+   pnpm install
+   ```
+   *(o `npm install` si utilizas npm)*
+
+3. **Iniciar el servidor de desarrollo:**
+   ```bash
+   pnpm dev
+   ```
+
+4. **Abrir en el navegador:**
+   Visita `http://localhost:5173/` para visualizar la aplicación.
+
+### 📦 Scripts Disponibles
+
+| Comando | Descripción |
+|---|---|
+| `pnpm dev` | Inicia el servidor de desarrollo con Hot Module Replacement (HMR) |
+| `pnpm build` | Compila y optimiza la aplicación para producción en la carpeta `/dist` |
+| `pnpm preview` | Previsualiza localmente el build de producción antes de desplegar |
+
+---
+
 ## 📄 Licencia y Créditos
 
 Rüne © 2026 Todos los derechos reservados | Desarrollado por [**WaveFrame Studio**](https://waveframe.com.ar/)
